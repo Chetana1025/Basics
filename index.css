@@ -1,0 +1,148 @@
+.container {
+  position: relative;
+  width: 300px;
+  height: 300px;
+}
+
+.circle-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 50%;
+  z-index: 10;
+}
+.circle-bottom-img {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 20px;
+  background-image: linear-gradient(to right, #ddd 34%, #fff 66%);
+  clip-path: polygon(100% 1%, 82% 51%, 100% 100%, 0 100%, 19% 51%, 0% 0%);
+  z-index: 15;
+}
+
+.section {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  /*   overflow: hidden; */
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+  background: linear-gradient(45deg, #f28a50 49.25%, black 0.75%, #7eaed8 50%);
+  box-shadow: 1px 1px 0 black;
+}
+div {
+  color: white;
+}
+.top-left div {
+  position: absolute;
+  bottom: 10px;
+  right: 55px;
+}
+.top-left div:nth-child(2) {
+  position: absolute;
+  bottom: 50px;
+  right: 10px;
+}
+ul {
+  color: white;
+  font-size: 10px;
+  margin: 2px;
+}
+.top-left ul {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+ul p {
+  padding: 0px;
+  margin: 4px 0px;
+  margin-left: -10px;
+}
+.top-right {
+  top: 0;
+  right: 0;
+  background: linear-gradient(-45deg, #78b26f 49.25%, black 0.75%, #f6ec70 50%);
+  box-shadow: -1px 1px 0 black;
+}
+.top-right div {
+  position: absolute;
+  bottom: 10px;
+  left: 55px;
+}
+.top-right div:nth-child(2) {
+  position: absolute;
+  bottom: 50px;
+  left: 10px;
+}
+.top-right ul {
+  position: absolute;
+  left: -22px;
+}
+.bottom-left {
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(135deg, #ab6dbd 49.25%, black 0.75%, #e57373 50%);
+  box-shadow: 1px -1px 0 black;
+}
+.bottom-left:after,
+.bottom-right:before {
+  content: "⚖";
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  width: 85%;
+  height: 1px;
+  background: black;
+  color: white;
+  position: absolute;
+  bottom: 25px;
+  right: 0px;
+}
+.bottom-right:before {
+  content: "🔬";
+  left: 0px;
+}
+.bottom-left div {
+  position: absolute;
+  right: 10px;
+  top: 55px;
+}
+.bottom-left div:nth-child(2) {
+  position: absolute;
+  right: 55px;
+  top: 10px;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(
+    -135deg,
+    #8dc1e6 49.25%,
+    black 0.75%,
+    #ff99c8 50%
+  );
+  box-shadow: -1px -1px 0 black;
+}
+
+.bottom-right div {
+  position: absolute;
+  left: -10px;
+  top: 65px;
+  z-index: 50;
+}
+.bottom-right div:nth-child(2) {
+  position: absolute;
+  left: 55px;
+  top: 10px;
+}
